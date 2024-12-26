@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+header {
+    padding: 1rem 4rem;
+    background-color: black;
+    font-size: 22px;
+    color: gray;
+    display: flex;
+}
+
+main {
+    padding: 1rem 4rem;
+}
+
+.logo {
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+.pages {
+    padding: 1rem 2.5rem;
+}
+
+.home {
+    color: gray;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 200px;
+    height: 20px;
+}
+
+select {
+    width: 40px;
+}
+
+.button {
+    width: 80px;
+}
+
+li {
+    padding-bottom: 0.25rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+p {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+h1 {
+    padding-bottom: 0.5rem;
+}
+
+.error {
+    color: red;
+}
+
+footer {
+    padding-left: 4rem;
+    padding-top: 1rem;
+}

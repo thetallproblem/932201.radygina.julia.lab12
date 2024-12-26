@@ -1,0 +1,20 @@
+﻿@using Lab12.Models
+
+@{
+    ViewData["Title"] = "ManualWithSeparateHandlers";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@using (Html.BeginForm("ManualSeparate", "Calculator", FormMethod.Post))
+{
+    <p>@Html.TextBox("firstNum", "", new { type = "text", @class="input"})</p>
+    <p>@Html.DropDownList("operation", Html.GetEnumSelectList(typeof(Operations)))</p>
+    <p>@Html.TextBox("secondNum", "", new { type = "text", @class="input"})</p>
+    <input type="submit" value="Submit" class="button"/>
+}
+
+@if (ViewBag.Error != null)
+{
+    <h3 class="error">@ViewBag.Error</h3>
+}

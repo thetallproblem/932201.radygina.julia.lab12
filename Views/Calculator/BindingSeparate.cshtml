@@ -1,0 +1,20 @@
+﻿@model Calculate
+
+﻿@{
+    ViewData["Title"] = "ModelBindingInSeparateModel";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@using (Html.BeginForm("BindingSeparate", "Calculator", FormMethod.Post))
+{
+    <input asp-for="firstNum" type="text" class="input"/>
+    <select asp-for="operation" asp-items="Html.GetEnumSelectList<Operations>()"></select>
+    <input asp-for="secondNum" type="text" class="input" />
+    <input type="submit" value="Submit" class="button" />
+}
+
+@if (ViewBag.Error != null)
+{
+    <h3 class="error">@ViewBag.Error</h3>
+}
